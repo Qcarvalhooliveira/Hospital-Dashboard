@@ -1,5 +1,6 @@
 {
   "name": "hopital",
+  "homepage": "https://Qcarvalhooliveira.github.io/Hospital-Dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rocketseat/eslint-config": "^2.2.2",
     "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0",
     "typescript": "^5.5.4"
   }

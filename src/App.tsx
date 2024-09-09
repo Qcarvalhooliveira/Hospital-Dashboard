@@ -18,10 +18,9 @@ export function App() {
     <>
       <GlobalStyle />
       <DataProvider>
-        <Router>
+        <Router basename="/Hospital-Dashboard">
           <div className="app-container">
             <nav aria-label="Barre latérale avec filtres">
-              {/* Removendo a prop onApplyFilters */}
               <Sidebar />
             </nav>
             <main tabIndex={-1} aria-live="polite">

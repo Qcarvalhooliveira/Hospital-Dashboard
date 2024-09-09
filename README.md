@@ -48,7 +48,7 @@ git clone https://github.com/Qcarvalhooliveira/Hospital-Dashboard.git
 #### **2.Naviguer dans le répertoire du projet**
 
 ```
-cd hospital
+cd Hospital-Dashboard
 ```
 
 #### **3.Installer les dépendances**
