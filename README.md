@@ -42,7 +42,7 @@
 #### **1.Cloner le repositoire Github**
 
 ```
-git clone https://github.com/Qcarvalhooliveira/hospital.git
+git clone https://github.com/Qcarvalhooliveira/Hospital-Dashboard.git
 ```
 
 #### **2.Naviguer dans le répertoire du projet**
