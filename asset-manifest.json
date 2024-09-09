@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/Hospital-Dashboard/static/js/main.1b283e75.js",
+    "main.js": "/Hospital-Dashboard/static/js/main.fc4ef1ab.js",
+    "static/media/house.png": "/Hospital-Dashboard/static/media/house.12edaa2295168d1fc68e.png",
     "index.html": "/Hospital-Dashboard/index.html",
-    "main.1b283e75.js.map": "/Hospital-Dashboard/static/js/main.1b283e75.js.map"
+    "main.fc4ef1ab.js.map": "/Hospital-Dashboard/static/js/main.fc4ef1ab.js.map"
   },
   "entrypoints": [
-    "static/js/main.1b283e75.js"
+    "static/js/main.fc4ef1ab.js"
   ]
 }
