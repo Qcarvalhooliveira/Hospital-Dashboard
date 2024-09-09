@@ -1,14 +1,18 @@
 import { HospitalComparisonChart } from '../Charts/HospitalComparisonChart/index'
 import { HospitalCard } from '../HospitalCard/index'
 import { HomePageContainer } from './styles'
+import house from '../../images/house.png'
 
 export function HomePage() {
   return (
     <HomePageContainer>
       <main>
-        <h1 aria-label="Dashboard des performances hospitalières">
-          Tableau de bord
-        </h1>
+        <div className="header">
+          <h1 aria-label="Dashboard des performances hospitalières">
+            Tableau de bord
+          </h1>
+          <img src={house} alt="Hospital icon" />
+        </div>
 
         <section
           aria-labelledby="hospital-section"

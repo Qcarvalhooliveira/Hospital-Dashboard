@@ -183,7 +183,7 @@ export function HospitalComparisonChart() {
       </LeftContainer>
       <RightContainer>
         <KPIs aria-label="KPI hospitalier - Indicateur clé de performance">
-          <h3>KPI hospitaliers</h3>
+          <h3>KPI Hospitaliers</h3>
           <ul>
             {kpiData.map((kpi, index) => (
               <li key={index}>

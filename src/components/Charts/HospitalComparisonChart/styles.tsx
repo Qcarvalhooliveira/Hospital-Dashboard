@@ -111,6 +111,11 @@ export const KPIs = styled.div`
     li {
       margin-bottom: 10px;
       font-size: 16px;
+      border-radius: 10px;
+      padding: 0.5rem;
+      color: #fff;
+      background: linear-gradient(90deg, #007bff, #6207ac);
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
     }
   }
 `
