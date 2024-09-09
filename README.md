@@ -1,35 +1,37 @@
-# **Dashboard Hospitalier**
+# **Dashboard Hospitalier** :hospital:
 
 * Ce projet est un tableau de bord hospitalier développé avec React TypeScript, utilisé pour afficher des indicateurs clés de performance (KPI) et des graphiques comparatifs pour plusieurs hôpitaux. Il permet également de filtrer les données par hôpital, spécialité et période d'hospitalisation.
 
+**Hospital-Dashboard** Live Preview - [Cliquez ici](https://qcarvalhooliveira.github.io/Hospital-Dashboard/)
 
-## **Choix Techniques**
 
-### **1. React TypeScript**
+## **Choix Techniques** :dart:
+
+### **1. React TypeScript** :pencil:
 
 * Le projet a été développé en utilisant React avec TypeScript pour bénéficier de la sécurité de typage statique et améliorer la robustesse du code.
 * La gestion des états est principalement effectuée avec des hooks React (useState, useEffect), et le React Router est utilisé pour la navigation entre les différentes pages (HomePage, HospitalPage).
 
-### **2. Styled Components**
+### **2. Styled Components** :pencil:
 
 * Styled Components est utilisé pour la stylisation des composants, permettant une meilleure modularité du style tout en gardant la flexibilité de l'injection dynamique de styles.
 * Chaque composant a ses styles définis dans un fichier styles.tsx, garantissant une séparation claire entre la logique de composant et la stylisation.
 
-### **3. ApexCharts**
+### **3. ApexCharts** :pencil:
 
 * La bibliothèque ApexCharts a été choisie pour créer des graphiques réactifs et interactifs. Elle offre une bonne flexibilité et des options de personnalisation adaptées aux besoins du tableau de bord.
 * Les graphiques inclus sont : des graphiques à barres (hospitalisations mensuelles et nombre de médecins par spécialité), et un graphique en camembert (satisfaction des patients).
 
-### **4. Gestion du contexte**
+### **4. Gestion du contexte** :pencil:
 
 * Les données sont récupérées et partagées à travers le projet en utilisant un Context API personnalisé, garantissant que les composants accèdent facilement aux données nécessaires sans les passer par des props multiples.
 
-### **5. Accessibilité**
+### **5. Accessibilité** :pencil:
 
 * Une attention particulière a été portée à l’accessibilité (ARIA), en veillant à ce que les éléments du tableau de bord soient accessibles aux lecteurs d’écran et à la navigation clavier.
 * Les composant graphique inclut des balises aria-label et utilise des techniques de gestion de focus pour améliorer l'expérience des utilisateurs.
 
-## **Installation et Exécution du Projet**
+## **Installation et Exécution du Projet** :construction:
 
 ### **Prérequis**
 
@@ -37,7 +39,7 @@
 **npm** ou **yarn**
 
 
-### **Étapes d'Installation**
+### **Étapes d'Installation** :checkered_flag:
 
 #### **1.Cloner le repositoire Github**
 
@@ -65,7 +67,7 @@ ou
 yarn install
 ```
 
-## **Exécution du Projet**
+## **Exécution du Projet** :white_check_mark:
 
 Pour démarrer l'application localement en mode développement :
 
@@ -82,7 +84,7 @@ yarn start
 L'application sera accessible sur http://localhost:3000.
 
 
-## **Structure du Projet**
+## **Structure du Projet** :clipboard:
 
 **/components :** Contient tous les composants principaux comme Charts (les différents graphiques DoctorSpecialtiesChart, HospitalComparisonChart et MonthlyHospitalizationsChart), HomePage, HospitalCard, HospitalPage, Sidebar. Ansi queles styles de chaque composant,
 
@@ -93,7 +95,7 @@ L'application sera accessible sur http://localhost:3000.
 **/public :** Contient le fichier statique et logo.
 
 
-## **Fonctionnalités Principales**
+## **Fonctionnalités Principales** :bookmark_tabs:
 
 * **Tableau de bord :** Affichage des KPI pour chaque hôpital (nombre total de patients, taux de satisfaction, traitements totaux, etc.).
     
