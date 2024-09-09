@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HomePage } from './components/HomePage'
+import { HospitalPage } from './components/HospitalPage'
+import { Sidebar } from './components/Sidebar'
+import { GlobalStyle } from './styles/GlobalStyle'
+import { DataProvider } from './context/dataContext'
 
-function App() {
+export function App() {
+  useEffect(() => {
+    const mainContent = document.querySelector('main')
+    if (mainContent) {
+      mainContent.focus()
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalStyle />
+      <DataProvider>
+        <Router>
+          <div className="app-container">
+            <nav aria-label="Barre latérale avec filtres">
+              {/* Removendo a prop onApplyFilters */}
+              <Sidebar />
+            </nav>
+            <main tabIndex={-1} aria-live="polite">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route
+                  path="/hospital/:hospitalName"
+                  element={<HospitalPage />}
+                />
+              </Routes>
+            </main>
+          </div>
+        </Router>
+      </DataProvider>
+    </>
+  )
 }
-
-export default App;

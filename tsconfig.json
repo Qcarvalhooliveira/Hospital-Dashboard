@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "types": ["styled-components"],
+    "typeRoots": ["./node_modules/@types", "./src/styles"], 
     "target": "es5",
     "lib": [
       "dom",
